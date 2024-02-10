@@ -31,17 +31,17 @@ Intended for third party integration applications. The OEM option provides the f
 
 # Risk Assessment
 
-https://chick92.github.io/Risk_Assessment_usage_switch.pdf
+https://chick92.github.io/robot_poe_switch_instructions/Risk_Assessment_usage_switch.pdf
 
 # Certifications
 
 ##### CE
 
-https://chick92.github.io/CE_robot_poe_switch.pdf
+https://chick92.github.io/robot_poe_switch_instructions//CE_robot_poe_switch.pdf
 
 ##### UKCA
 
-https://chick92.github.io/UKCE_Robot_PoE_Switch.pdf
+https://chick92.github.io/robot_poe_switch_instructions//UKCE_Robot_PoE_Switch.pdf
 
 
 # Warnings
