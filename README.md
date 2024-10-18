@@ -5,23 +5,21 @@ The OSE Robot PoE Switch allows the user to easily integrate a Rajant ES1, DX2 a
 
 # Spot version specifications
 
-The OSE Robot PoE Switch (stand alone) allows the user to easily integrate a Rajant ES1 on to a Boston Dynamics spot robot, with or without a GXP (General Expansion Payload). The standalone version allows the user to securely mount an ES1 to the robot, and provides networking in the same fashion aa the Core / EAP / OEM versions. Additional options are available for the standalone version, depending on customer requirements. 
+The OSE Robot PoE Switch (stand alone) allows the user to easily integrate a Rajant ES1 or Cardinal on to a Boston Dynamics spot robot, with or without a GXP (General Expansion Payload). The standalone version allows the user to securely mount an ES1 to the robot, and provides networking to the robot as well as additional Ethernet and power outputs for additional payloads. Also included is a PoE+ output for powering and networking to a Fluke SV600. 
 
-
--  GXP elimination circuitry (removes the need for customer to provide a GXP)
+- GXP elimination circuitry (removes the need for customer to provide a GXP)
 - Powers and provides mounting solution for Rajant ES1 and Rajant Cardinal
-- Optional Smart lights controlled via webserver - provides lighting for robot - note, secondary PoE+ is removed if this is specified
-- Secondary PoE+ output for use with PoE+ devices such as Fluke SV600 - note, Smart lights cannot be specified along with this option
+- Secondary PoE+ output for use with PoE+ devices such as Fluke SV600
 
 ![alt text](rrs_side_view.jpg "Robot PoE Switch - Spot")
+
 
 # OEM version specifications
 
 Intended for third party integration applications. The OEM option provides the following:
 
-- 12-27V input (if PSU is specified, 5V if not)
 - 10/100 Mbps networking with 4 Ethernet ports (1 PoE capable).
--  Mounting for Rajant Cardinal
+- Mounting for Rajant Cardinal
 - Low profile design 
 
 ![alt text](OEM_side1.jpeg "OEM")
@@ -62,28 +60,19 @@ The following is provided with the standalone unit:
 2x M4 6 mm Hex bolts for Rajant ES1
 2x M6 25 mm Hex bolts for Rajant Cardinal
 
-##### Smart Lights
-
-Smart lights can be configured at the expense of the PoE+ hardware.
-
-To use the Smart lights option, first connect the lights up using the provided cables. The front two lights can be positioned on the robot nose using the provided double sided sticky tape. The rear lights can either be positioned on the top rails or positioned on the rear mounting points using the provided M5 bolts. The user can specify the orientation, although it is recommended to ignore the side cameras as these are seldom used for navigation via teleportation. 
-
-Once the lights are connected up, connect up using the included extension cables, connect them to the Robot PoE lighting port, following the cable colour order printed above the port, i.e white / orange under the W / O, red under the R and brown / black under the B / B.
-
-![alt text](spot_with_lights.jpg "Lighting")
-
-The webserver to control the smart lights can be accessed on any web browser capable device on the same LAN as the Spot. Navigate to the following IP address:
-
-192.168.50.124
-
-This will allow you to switch the lights on and off. 
-##### Mounting Rajant Cardinal or Rajant ES1
+# Mounting Rajant Cardinal or Rajant ES1
 
 Rajant ES1 and Cardinal breadcrumbs can be mounted on to the top of the Robot PoE Switch, using the provided bolts. M4 for the ES1 and M6 for the Cardinal. 
 
+![alt text](RPS_top.jpg "RPS_top")
+
 Use only the bolts provided with the Robot PoE Switch as they are of a specified length.
 
-##### Mounting on Spot
+Connect the Rajant Cardinal or ES1 to the Ethernet output labeled "Rajant". DO NOT connect it to the Silver Ethernet output labeled "PoE+" as this is an Active PoE output and WILL NOT power the Rajant.
+
+![alt text](RPS_Rajant.jpg "Rajant PoE passive")
+
+# Mounting on Spot
 
 The Robot PoE Switch is designed to be mounted on the top of a Boston Dynamics spot, and as such is compatible with the payload rail spacing. Use the included M5 T-Nuts and M5 bolts. It is recommended to use loctite if available, and torque to hand-tight.
 
@@ -99,10 +88,14 @@ Once mounted, you will need to add the payload credentials to Spot
 - Enter 0,0,0 for position of centre of mass
 - Leave as "point mass"
 
-##### Secondary PoE+ output
+# Secondary PoE+ output
 
 The Robot PoE Switch PoE+ output allows the user to power and network with additional PoE+ enabled sensors such as the Fluke SV600, without additional interface hardware. 
 The PoE+ output is found at the rear of the device, above the payload interface cable. Simply connect an Ethernet cable from this port to your sensor. 
+
+This output is labeled as PoE+. Do not connect the Rajant to this, as it will not work, and could potentially damage the Rajant. 
+
+![alt text](RPS_PoE+.jpg "PoE+ output")
 
 
 # OEM version mounting information
